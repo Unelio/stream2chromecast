@@ -27,19 +27,19 @@ NB=`./stream2chromecast.py -devicelist | grep "0 devices found"`
 if [ ! -d "$DIR"/"$@" ]
 then
   case $EXT in
-	  jpg|png|mp3)
-       if [ $EXT = "mp3" ]; then
+    jpg|png|mp3)
+      if [ $EXT = "mp3" ]; then
         c "Votre musique a été envoyé sur votre chromecast"
-       else
+      else
         c "Votre image a été envoyé sur votre chromecast"
-       fi
+      fi
       ./stream2chromecast.py "$DIR"/"$@"
-	  ;;
-	  mp4|mkv)
+    ;;
+    mp4|mkv)
       c "Votre vidéo a été envoyé sur votre chromecast"
       ./stream2chromecast.py -transcode "$DIR"/"$@"
-	  ;;
-	  *)
+    ;;
+    *)
       z "Ce fichier ne peut pas être casté, veuillez en sélectionner un autre."
   esac
 else

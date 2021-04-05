@@ -1,16 +1,16 @@
 Stream2Chromecast pour Caja
 ===========================
 
-Décompresser l'archive dans le dossier ./Python de votre $HOME
+Décompresser l'archive dans le dossier ./Python/stream2chromecast de votre $HOME
 
 Faire un lien vers le script dans votre dossier bin ou .bin de votre $HOME suivant votre installation :
 (Regardez la configuration de votre fichier .profile ou .bashrc)
 
-ln -s $HOME/.Python/stream2chromecast.sh s2c
+ln -s $HOME/.Python/stream2chromecast/stream2chromecast.sh s2c
 
 On rend le script éxécutable :
 
-chmod +x $HOME/.Python/stream2chromecast.sh
+chmod +x $HOME/.Python/stream2chromecast/stream2chromecast.sh
 
 On ajoute un fichier bash pour appeler le script dans Caja :
 

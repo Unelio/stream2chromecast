@@ -15,5 +15,6 @@ chmod +x $HOME/.Python/stream2chromecast.sh
 On ajoute un fichier bash pour appeler le script dans Caja :
 
 mv "Caster (Images, Musiques et Vidéos)" $HOME/.config/caja/scripts/
+
 chmod +x "$HOME/.config/caja/scripts/Caster (Images, Musiques et Vidéos)"
 
